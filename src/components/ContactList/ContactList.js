@@ -8,7 +8,7 @@ const ContactList = ({ contacts, onRemoveContact }) => (
           <li
               className = {styles.TaskList_item}
               key={contact.id}>
-              {contact.name + ":" + contact.number}
+                {contact.name}: {contact.number}
               {
               <button
                   className={styles.TaskList_button}
