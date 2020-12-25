@@ -19,11 +19,17 @@ class App extends Component {
         const addName = this.state.contacts
             .map((contact) => contact.name)
             .includes(task.name);
+        
+        const inputNumber = Number(task.number)
 
         if (addName) {
             alert(`${task.name} is already in contacts`);
         } else if (task.name.length === 0) {
             alert("Field 'Name' must be filled!");
+        } else if (task.number.length === 0) {
+            alert("Field 'Number' must be filled!")
+        } else if (!inputNumber) {
+            alert("Insert the number")
         } else {
             const contact = {
                 ...task,

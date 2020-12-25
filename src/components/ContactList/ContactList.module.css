@@ -1,10 +1,12 @@
 .TaskList {
-  width: 600px;
+  width: 400px;
+  padding: 0;
 }
 
 .TaskList_item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 12px;
 
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
@@ -35,4 +37,10 @@
 .TaskList_button {
   margin-right: 4px;
   margin-left: 4px;
+  cursor: pointer;
+}
+
+.TaskListItem {
+  display: flex;
+  justify-content: space-between;
 }
