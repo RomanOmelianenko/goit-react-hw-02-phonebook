@@ -70,17 +70,17 @@ class App extends Component {
         return (
             <div>
                 <h1>Phonebook</h1>
-                <ContactForm
+                <ContactForm 
                     onAddContact={this.addContact}
                 />
-                {contacts.length > 0 && (
-                <h2>Contacts</h2>
-                )}
-                {visibleContacts.length > 1 && (
+                {/* {visibleContacts.length > 1 && ( */}
                 <Filter
                     value={filter}
                     onChangeFilter={this.changeFilter}
                 />
+                {/* )} */}
+                {contacts.length > 0 && (
+                <h2>Contacts</h2>
                 )}
                 {visibleContacts.length > 0 && (
                     <ContactList
